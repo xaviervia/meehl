@@ -1,14 +1,14 @@
 // Meehl
 // =====
 //
-// Meehl formulas processor. TODO Eventually will run from command line
+// Meehl formulas processor.
 //
 //
 // Installation
 // ------------
 //
 // ```
-// npm install meehl
+// npm install -g meehl
 // ```
 //
 // Usage
@@ -17,25 +17,30 @@
 // First you need to make sure the corresponding formula package is available.
 //
 // ```
-// npm install meehl-candidate
+// npm install -g meehl-candidate
 // ```
 //
 // Then run:
 //
-// ```js
-// var meehl = require("meehl");
-//
-// meehl("candidate", function (grade, percentage, value) {
-//   console.log("The candidate received a " + grade)
-//   console.log("The percentage value is " + percentage + "% for a total of " +
-//               value)
-// });
+// ```
+// meehl candidate
 // ```
 //
-// The snippet loads the formula in the npm package named `meehl-candidate` and
+// Meehl loads the formula in the npm package named `meehl-candidate` and
 // prompts the user for input as required by the formula. When the user
 // finishes filling out the form, it logs the results in form of grades,
 // percentage points and total value as reported by **meehl**.
+//
+// To consume Meehl programatically, do:
+//
+// ```javascript
+// var meehl = require("meehl")
+//
+// meehl("candidate", function (grade, percentage, value) {
+//  console.log("The " + process.argv[2] + " received a " + grade)
+//  console.log("That is the " + percentage + "% of " + value)
+// })
+// ```
 //
 // Formula
 // -------

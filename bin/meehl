@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var meehl = require("../meehl")
+var color = require("cli-color")
+
+meehl(process.argv[2], function (grade, percentage, value) {
+  console.log("")
+  console.log("Result")
+  console.log("------")
+  console.log("")
+  console.log("Grade: " + color.bold(grade))
+  console.log("")
+  console.log("That is the " + color.bold(percentage) + "% out of " + color.bold(value))
+})

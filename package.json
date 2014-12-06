@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Meehl formulas processor for your convenience",
   "main": "meehl.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xaviervia/meehl"
+  },
+  "bin": {
+    "meehl": "./bin/meehl"
   },
   "keywords": [
     "meehl",
@@ -21,8 +21,8 @@
     "url": "https://github.com/xaviervia/meehl/issues"
   },
   "dependencies": {
-    "inquirer": "~0.5.1",
-    "cli-color": "~0.3.2",
-    "bluebird": "~2.0.7"
+    "bluebird": "2.0.7",
+    "cli-color": "0.3.2",
+    "inquirer": "0.5.1"
   }
 }
