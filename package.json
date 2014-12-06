@@ -1,6 +1,6 @@
 {
   "name": "meehl",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Meehl formulas processor for your convenience",
   "main": "meehl.js",
   "repository": {
